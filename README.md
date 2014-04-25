@@ -1,23 +1,39 @@
-PhoneGap Calendar plugin
-for  Android, by Sayone Technologies
+# PhoneGap Camera Crop plugin 
+
+for  Android, by [Sayone Technologies](http://www.sayonetech.com)
 
 
-1. Description
+## 1. Description
 
 This plugin helps you crop the images coming from  gallery or camera
 
 Works with PhoneGap >= 3.0.
 
+## 2. Usage
 
-2. CREDITS
+In Javascript
 
-This plugin is an enhancement of existing phonegap camera plugin by Sayone Technologies.
+          cordova.exec(onSuccess, onFail, "openCropCamera", option, //option should be either "camera" or "gallery"
+          [{       // and this array of custom arguments to create our entry
+                "targetWidth": 132, //Width As integer
+                "targetHeight": 132 //Height As integer
+          }]);
 
-3. Issues Or Contributions
+In config.xml
 
-If you have an idea to improve the package, let me know. It will help the community.
-If this helped you, spread the word and don't forget to star the repo.
-Post issues in the github issue tracker.
-My email is hello@sayonetech.com
-Pull requests are welcome.
+          <feature name="openCropCamera">
+              <param name="android-package" value="com.phonegap.plugins.cropPlugin.openCropCamera" />
+          </feature>
+
+## 3. Credits
+
+This plugin is an enhancement of existing phonegap camera plugin by [Sayone Technologies](http://www.sayonetech.com)
+
+## 4. Issues Or Contributions
+
+* If you have an idea to improve the package, let me know. 
+* Post issues in the github issue tracker.
+*  Our Email hello@sayonetech.com
+*  Pull requests are welcome.
+
 
