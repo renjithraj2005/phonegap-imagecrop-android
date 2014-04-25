@@ -18,6 +18,15 @@ In Javascript
                 "targetWidth": 132, //Width As integer
                 "targetHeight": 132 //Height As integer
           }]);
+          
+          function onSuccess(imageURI) {
+            //ImageURI as base64 String
+          }
+
+
+          function onFail(message) {
+            //Error message
+          }
 
 In config.xml
 
